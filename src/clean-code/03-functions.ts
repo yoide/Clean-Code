@@ -17,10 +17,10 @@
 
     // Crear una película
     interface IMovie {
-        title: string,
+        cast: string[]
         description: string,
         rating: number,
-        cast: string[]
+        title: string,
     }
     function createMovie({ title, description, rating, cast }: IMovie) {
         console.log({ title, description, rating, cast });
